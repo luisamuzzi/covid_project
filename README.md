@@ -187,9 +187,10 @@ Além do relatório no Power BI, disponibilizou-se o script com os códigos em S
 
 ### 6. Principais insights de dados
 
-1. Os continentes possuem um comportamento semelhante em relação ao total de mortes ao longo do tempo, com exceção da Oceania;
-2. A China foi o país que demorou mais tempo para atingir 50% de de suas mortes totais (433 dias) no período analisado. Como comparação, a Índia, país com maior contribuição para as mortes registradas na Ásia, demorou apenas 204 dias.
-3. Diversos países tiveram um aumento no número de mortes ao longo dos meses, seguido de uma queda nos meses finais de análise. O que pode estar associado à vacinação, que se iniciou nos meses finais de análise. Essa observação não é tão clara no contexto de continentes.
+1.Apesar de a Europa possuir o maior número de casos e de mortes dentre os continentes, quando analisadas as mortes em relação aos casos, as maiores probabilidades de morte se dão na América do Sul e na África.
+2. Os continentes possuem um comportamento semelhante em relação ao total de mortes ao longo do tempo, com exceção da Oceania;
+3. A China foi o país que demorou mais tempo para atingir 50% de de suas mortes totais (433 dias) no período analisado. Como comparação, a Índia, país com maior contribuição para as mortes registradas na Ásia, demorou apenas 204 dias.
+4. Diversos países tiveram um aumento no número de mortes ao longo dos meses, seguido de uma queda nos meses finais de análise. O que pode estar associado à vacinação, que se iniciou nos meses finais de análise. Essa observação não é tão clara no contexto de continentes.
 
 ### 7. Conclusão
 
