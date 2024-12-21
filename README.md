@@ -11,14 +11,14 @@ Leia mais sobre o projeto abaixo.
 
 ### Índice
 
-- [1. Contexto]()
-- [2.  Premissas assumidas para a análise]()
-- [3. Ferramentas utilizadas]()
-- [4. Estratégias de solução]()
-- [5. O produto final do projeto]()
-- [6. Principais insights de dados]()
-- [7. Conclusão]()
-- [8. Próximos passos]()
+- [1. Contexto](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#1-contexto)
+- [2.  Premissas assumidas para a análise](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#2--premissas-assumidas-para-a-an%C3%A1lise)
+- [3. Ferramentas utilizadas](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#3-ferramentas-utilizadas)
+- [4. Estratégias de solução](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#4-estrat%C3%A9gias-de-solu%C3%A7%C3%A3o)
+- [5. O produto final do projeto](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#5-o-produto-final-do-projeto)
+- [6. Principais insights de dados](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#6-principais-insights-de-dados)
+- [7. Conclusão](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#7-conclus%C3%A3o)
+- [8. Próximos passos](https://github.com/luisamuzzi/covid_project/tree/main?tab=readme-ov-file#8-pr%C3%B3ximos-passos)
 
 ### 1. Contexto
 
