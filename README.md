@@ -80,7 +80,7 @@ O próximo passo foi a importação dos arquivos csv para a tabela. Clicou-se na
     2. Identificar dados faltantes e outliers.
 3. Análise dos dados por meio de consultas SQL:
     
-    Os dados foram analisados com queries simples a avançadas (por exemplo: Cláusula CASE, Window functions, CTE) considerando-se três frentes:
+    Os dados foram analisados com queries simples a avançadas (por exemplo: funções agregadoras, Cláusula CASE, Window functions, CTE) considerando-se três frentes:
     
     1. Análise do impacto e progressão da COVID-19
         - Total de casos e de mortes por país
@@ -185,7 +185,7 @@ O relatório pode ser visualizado por meio do link:
         3. Comparativo do total do total de mortes e de vacinações por mês e por continente: Na Europa, África e América do Norte, o total de mortes parece diminuir com o aumento do total de vacinações.
         Na América do Sul e na Ásia, o número de mortes continua aumentando apesar do aumento de vacinações.
 
-Além do relatório no Power BI, disponibilizou-se o script com os códigos em SQL contendo a análise completa e comentários dos insights obtidos. As consultas SQL consitiram desde queries simples a avançadas (por exemplo: cláusula CASE, Window functions, CTE).
+Além do relatório no Power BI, disponibilizou-se o script com os códigos em SQL contendo a análise completa e comentários dos insights obtidos. As consultas SQL consitiram desde queries simples a avançadas (por exemplo: funções agregadoras, cláusula CASE, Window functions, CTE).
 
 [Script SQL com análise completa](https://github.com/luisamuzzi/covid_project/blob/main/projeto_covid.sql).
 
