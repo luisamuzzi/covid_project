@@ -53,25 +53,25 @@ O banco de dados escolhido foi o SQLite devido a sua facilidade de uso, não req
 
 Inicialmente criou-se uma pasta para armazenar os dados do projeto (Create → New Folder):
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/7d8eec70-b405-4b44-a3e8-a9a2d509f425/image.png)
+![create new folder](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(0).png)
 
 Clicando-se em cima da pasta criada, criou-se uma conexão (Create → Connection). Em seguida foi escolhido o  SQLite e escolhida a opção Next.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/76dd2a35-db12-46ea-99ae-b13423280170/image.png)
+![select sqlite database](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(1).png)
 
 Configurou-se o caminho onde seria criado o arquivo do banco de dados (Path) e nomeou-se o banco de dados. Por fim, finalizou-se a configuração (Finish).
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/12d3f573-f9a5-401e-b10e-263f34155e34/image.png)
+![database path](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(2).png)
 
 Em seguida, verificou-se os arquivos csv que continham os dados, ou seja, se possuíam cabeçalho (nome das colunas), qual era o delimitador e se não havia erros no arquivo. O arquivo foi renomeado para o nome que seria usado na tabela no SQLite.
 
 Então, criou-se um novo script para criação das queries SQL no qual foi criada a tabela.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/0754f047-7efe-47e7-a9d8-1924ac7d7840/image.png)
+![create table](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(3).png)
 
 O próximo passo foi a importação dos arquivos csv para a tabela. Clicou-se na tabela criada e, em seguida, em Import Data. Com isso, o arquivo csv foi escolhido e configurado.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/1737df0f-cd4e-419d-939e-9e441e6c7880/image.png)
+![import csv data](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(4).png)
 
 1. Exploração dos dados por meio de consultas SQL:
     1. Análise exploratória dos dados para identificar a distribuição de features e padrões nos dados.
@@ -126,17 +126,17 @@ O próximo passo foi a importação dos arquivos csv para a tabela. Clicou-se na
     
     Para permitir a integração das consultas SQL realizadas com o Power BI foi utilizada uma conexão ODBC (Open Database Connectivity). No  caso do SQLite, é preciso fazer a instalação do driver no [link](http://www.ch-werner.de/sqliteodbc/).
     
-    Em seguida, realizou-se o passo a passo: Get Data → More… → ODBC → Conect
+    Em seguida, realizou-se o passo a passo: Get Data → More… → ODBC → Connect
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/93735c1e-b8f5-42d7-802f-341d8f0b3367/image.png)
+    ![connect odbc](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(5).png)
     
-    Na janela seguinte, selecionou-se SQLite3 Datasource e a opção Advanced Options. Neste menu, foi inserido o caminho do arquivo do banco de dados (database=<caminho do arquivo>) e a query cujos dados desejava-se importar.
+    Na janela seguinte, selecionou-se SQLite3 Datasource e a opção Advanced Options. Neste menu, foi inserido o caminho do arquivo do banco de dados (database=<inserir caminho do arquivo no computador>) e a query cujos dados desejava-se importar.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/8d885f36-24a1-49ed-93bb-3717369278c4/image.png)
+    ![query](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(6).png)
     
     Na tela seguinte, clicou-se a conexão.
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/e8de87f3-99c3-4a0f-95fa-2763e9e375d5/c139b1ab-3d1f-4e80-9ffb-f226a7501fc3/image.png)
+    ![connection](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(7).png)
     
 4. Criação dos dashboards:
     
