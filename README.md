@@ -7,6 +7,8 @@ Os produtos foram um relatório em Power BI contendo três dashboards com os pri
 
 [Relatório - Panorama da Covid-19 no mundo](https://app.powerbi.com/view?r=eyJrIjoiZGQ0MzFmNTAtN2E5OS00NzQyLWJmMjktNzhjYjg1Y2Y2NzM0IiwidCI6ImUyZjc3ZDAwLTAxNjMtNGNmNi05MmIwLTQ4NGJhZmY5ZGY3ZCJ9).
 
+[Script SQL com análise completa](https://github.com/luisamuzzi/covid_project/blob/main/projeto_covid.sql).
+
 Leia mais sobre o projeto abaixo.
 
 ### Índice
@@ -22,7 +24,7 @@ Leia mais sobre o projeto abaixo.
 
 ### 1. Contexto
 
-O objetivo desse projeto é analisar dados referentes à Covid-19 à nível de país e continente para se obter um panorama do comportamento da doença ao redor do mundo.
+O objetivo desse projeto é analisar dados referentes à Covid-19 a nível de país e continente para se obter um panorama do comportamento da doença ao redor do mundo.
 
 Os dados utilizados incluem a data, o país, o continente, o número de novos casos e de novas mortes, o número de hospitalizações e de internações em UTI, o número de vacinações, o índice de restrição, dados sociodemográficos, entre outros.
 
@@ -55,7 +57,7 @@ Inicialmente criou-se uma pasta para armazenar os dados do projeto (Create → N
 
 ![create new folder](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(0).png)
 
-Clicando-se em cima da pasta criada, criou-se uma conexão (Create → Connection). Em seguida foi escolhido o  SQLite e escolhida a opção Next.
+Clicando-se em cima da pasta criada, criou-se uma conexão (Create → Connection). Em seguida foi escolhido o SQLite e escolhida a opção Next.
 
 ![select sqlite database](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(1).png)
 
@@ -73,12 +75,12 @@ O próximo passo foi a importação dos arquivos csv para a tabela. Clicou-se na
 
 ![import csv data](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(4).png)
 
-1. Exploração dos dados por meio de consultas SQL:
+2. Exploração dos dados por meio de consultas SQL:
     1. Análise exploratória dos dados para identificar a distribuição de features e padrões nos dados.
     2. Identificar dados faltantes e outliers.
-2. Análise dos dados por meio de consultas SQL:
+3. Análise dos dados por meio de consultas SQL:
     
-    Os dados foram analisados considerando-se três frentes:
+    Os dados foram analisados com queries simples a avançadas (por exemplo: Cláusula CASE, Window functions, CTE) considerando-se três frentes:
     
     1. Análise do impacto e progressão da COVID-19
         - Total de casos e de mortes por país
@@ -120,11 +122,11 @@ O próximo passo foi a importação dos arquivos csv para a tabela. Clicou-se na
         - Índice de restrição média por continente comparado com o total de casos e mortes
         - Relação entre fatores demográficos/socioeconômicos e mortalidade por país
         - Relação entre fatores demográficos/socioeconômicos e mortalidade por continente
-3. Integração com o Power BI para a criação de visualizações:
+4. Integração com o Power BI para a criação de visualizações:
     
     Os dados das principais consultas foram importados para o Power BI e transformados em gráficos, cartões e tabelas, permitindo uma melhor visualização dos insights obtidos. 
     
-    Para permitir a integração das consultas SQL realizadas com o Power BI foi utilizada uma conexão ODBC (Open Database Connectivity). No  caso do SQLite, é preciso fazer a instalação do driver no [link](http://www.ch-werner.de/sqliteodbc/).
+    Para permitir a integração das consultas SQL realizadas com o Power BI foi utilizada uma conexão ODBC (Open Database Connectivity). No caso do SQLite, é preciso fazer a instalação do driver no [link](http://www.ch-werner.de/sqliteodbc/).
     
     Em seguida, realizou-se o passo a passo: Get Data → More… → ODBC → Connect
     
@@ -134,11 +136,11 @@ O próximo passo foi a importação dos arquivos csv para a tabela. Clicou-se na
     
     ![query](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(6).png)
     
-    Na tela seguinte, clicou-se a conexão.
+    Na tela seguinte, finalizou-se a conexão.
     
     ![connection](https://github.com/luisamuzzi/covid_project/blob/main/images/image%20(7).png)
     
-4. Criação dos dashboards:
+5. Criação dos dashboards:
     
     Três dashboards foram criados para apresentação dos principais dados de maneira clara e acessível por meio de gráficos, cartões e tabelas:
     
@@ -183,11 +185,13 @@ O relatório pode ser visualizado por meio do link:
         3. Comparativo do total do total de mortes e de vacinações por mês e por continente: Na Europa, África e América do Norte, o total de mortes parece diminuir com o aumento do total de vacinações.
         Na América do Sul e na Ásia, o número de mortes continua aumentando apesar do aumento de vacinações.
 
-Além do relatório no Power BI, disponibilizou-se o script com os códigos em SQL contendo a análise completa e comentários dos insights obtidos.
+Além do relatório no Power BI, disponibilizou-se o script com os códigos em SQL contendo a análise completa e comentários dos insights obtidos. As consultas SQL consitiram desde queries simples a avançadas (por exemplo: cláusula CASE, Window functions, CTE).
+
+[Script SQL com análise completa](https://github.com/luisamuzzi/covid_project/blob/main/projeto_covid.sql).
 
 ### 6. Principais insights de dados
 
-1.Apesar de a Europa possuir o maior número de casos e de mortes dentre os continentes, quando analisadas as mortes em relação aos casos, as maiores probabilidades de morte se dão na América do Sul e na África.
+1. Apesar de a Europa possuir o maior número de casos e de mortes dentre os continentes, quando analisadas as mortes em relação aos casos, as maiores probabilidades de morte se dão na América do Sul e na África.
 2. Os continentes possuem um comportamento semelhante em relação ao total de mortes ao longo do tempo, com exceção da Oceania;
 3. A China foi o país que demorou mais tempo para atingir 50% de de suas mortes totais (433 dias) no período analisado. Como comparação, a Índia, país com maior contribuição para as mortes registradas na Ásia, demorou apenas 204 dias.
 4. Diversos países tiveram um aumento no número de mortes ao longo dos meses, seguido de uma queda nos meses finais de análise. O que pode estar associado à vacinação, que se iniciou nos meses finais de análise. Essa observação não é tão clara no contexto de continentes.
